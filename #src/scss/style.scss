@@ -1,0 +1,198 @@
+// <import fonts> 
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Varta:wght@100;200;300;400;500;600;700&display=swap');
+// </import fonts>
+
+
+// <mixins>
+
+// </mixins>
+
+
+// <import files>
+	@import 'nullstyle.scss';
+
+	@import 'header.scss';
+// </import files>
+
+h2 {
+	font-family: Raleway;
+}
+
+body {
+	font-family: Varta, sans-serif;
+	color: #fff;
+}
+
+.main {
+	flex: 1 1 auto;
+	padding: 10vh 0px 0px 0px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.promo {
+	background-image: linear-gradient(60deg, #3a3d40, #19181a);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	&__title {
+		font-size: 6rem;
+		font-family: Roboto;
+		font-weight: 900;
+	}
+	&__subtitle {
+		font-size: 3rem;
+		font-weight: 200;
+		font-style: italic;
+		color: #be3144;
+		font-weight: 200;
+	}
+}
+.works {
+	padding: 30px 0px;
+	background: #45567d;
+	&__title {
+		font-size: 3rem;
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+
+		&_cool {
+			margin: 0 6px;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	&__item {
+		display: block;
+		max-width: 365px;
+		max-height: 430px;
+		margin: 30px 0;
+
+		&:hover {
+			.code {
+				color: orange;
+			}
+		}
+	}
+
+	&__photo {
+			max-width: 365px;
+	}
+	&__name {
+		display: flex;
+		background-color: #303841;
+		height: 430px - 365px;
+		widows: 100%;
+		font-family: varta;
+		font-size: 2rem;
+		color: #fff!important;
+		justify-content: center;
+		align-items: center;
+	}
+
+	hr {
+		margin: 10px auto 30px auto;
+		border-bottom: #fff 3px solid;
+		border-radius: 3px;
+		width: 55%;
+	}
+
+	.works__link {
+		display: block;
+		margin: 40px auto;
+		width: 150px;
+		height: 40px;
+		background-color: #303841;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 3px;
+		line-height: 40px;
+		transition-duration: 0.3s;
+
+		span {
+			background: url('../img/icons/arrow.png') right no-repeat;
+			padding: 0px 32px 0px 0px;
+			transition-duration: 0.5s;
+		}
+
+		&:hover {
+			background-color: #be3144;
+			span {
+				padding: 0px 40px 0px 0px;
+			}
+		}
+	}
+}
+
+.code {
+	color: #303841;
+	transition: color 0.3s ease-out;
+}
+.container {
+	max-width: 1210px;
+	margin: 0 auto;
+}
+
+.end {
+	background-color: #303841;
+	padding-top: 200px;
+	&__title {
+		font-size: 5em;
+		text-align: center;
+	}
+	&__subtitle {
+		margin: 15px 0px 0px 0px;
+		font-size: 16px;
+		font-style: italic;
+		text-align: center;
+	}
+	&__icons {
+		display: flex;
+		justify-content: center;
+	}
+	&__link {
+		img {
+			margin: 40px 25px;
+			margin-bottom: 100px;
+			width: 50px;
+			transition-duration: 0.5s;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	hr {
+		border: #be3144 3px solid; 
+	}
+
+	.footer {
+		margin-top: 20px;
+		text-align: right;
+
+		&__info {
+			font-size: 20px;
+			margin: 0px 5px 0px 0px;
+		}
+		&__add {
+			margin: 5px 5px 0px 0px;
+
+			a{
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+}

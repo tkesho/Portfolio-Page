@@ -1,0 +1,36 @@
+.header {
+	border-bottom: #000 1px solid;
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	background-color: rgb(190,49,68);
+
+	&__container {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+.nav {
+	&__list {
+		display: flex;
+		margin: 0px auto;
+		justify-content: space-around;
+	}
+
+	li {
+		font-size: 24px;
+		line-height: 10vh;
+		padding-left: 20px;
+		padding-right: 20px;
+
+
+		a{
+			color: #fff;
+		}
+
+
+		&:hover {
+			background-color: #45567d;
+		}
+	}
+}
