@@ -118,7 +118,8 @@ body {
 		display: block;
 		max-width: 365px;
 		max-height: 430px;
-		margin: 30px 0;
+		margin: 30px 20px;
+		cursor: pointer;
 
 		&:hover {
 			.code {
@@ -147,7 +148,7 @@ body {
 		margin: 10px auto 30px auto;
 		border-bottom: #fff 3px solid;
 		border-radius: 3px;
-		width: 55%;
+		width: 65%;
 	}
 
 	.works__link {
@@ -248,15 +249,7 @@ body {
 	}
 }
 
-@media (max-width:$md4+px) {
-	.end {
-		&__link {
-			img {
-				width: 30px;
-			}
-		}
-	}
-
+@media (max-width:$md2+px) {
 	.works {
 		&__photo {
 			max-width: 270px;
@@ -264,6 +257,17 @@ body {
 
 		&__item {
 			max-width: 270px;
+		}
+	}
+}
+
+@media (max-width:$md4+px) {
+	.end {
+		&__link {
+			img {
+				width: 40px;
+				margin: 40px 15px;
+			}
 		}
 	}
 }

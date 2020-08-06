@@ -199,7 +199,8 @@ body {
     display: block;
     max-width: 365px;
     max-height: 430px;
-    margin: 30px 0; }
+    margin: 30px 20px;
+    cursor: pointer; }
     .works__item:hover .code {
       color: orange; }
   .works__photo {
@@ -224,7 +225,7 @@ body {
     margin: 10px auto 30px auto;
     border-bottom: #fff 3px solid;
     border-radius: 3px;
-    width: 55%; }
+    width: 65%; }
   .works .works__link {
     display: block;
     margin: 40px auto;
@@ -299,10 +300,13 @@ body {
         color: #fff;
         text-decoration: underline; }
 
-@media (max-width: 479.98px) {
-  .end__link img {
-    width: 30px; }
+@media (max-width: 991.98px) {
   .works__photo {
     max-width: 270px; }
   .works__item {
     max-width: 270px; } }
+
+@media (max-width: 479.98px) {
+  .end__link img {
+    width: 40px;
+    margin: 40px 15px; } }
